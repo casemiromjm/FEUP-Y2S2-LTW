@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<!--
+The news article page has one particular news item in its complete form. It also has comments written by the readers
+-->
+
+<html lang="en-US">
+    <head>
+        <link rel="icon" href="jornal.png">
+        <meta charset="utf-8">
+        <title>Online Newspaper</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <a href="all.html"><img src="jornal.png" alt="newspaper logo" width="128"></a>
+            <h1>
+                <a href="all.html">LM News</a>
+            </h1>
+        </header>
+
+        <!-- navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="section.html">Sports</a></li>
+                <li><a href="section.html">Politics</a></li>
+                <li><a href="section.html">Local</a></li>
+            </ul>
+        </nav>
+
+        <!-- content -->
+        <main>
+            <!-- article per se -->
+            <article>
+                <h2>Lorem Ipsum</h2>
+                <p>
+                    Dolor sit amet, consectetur adipiscing elit. Nunc eu erat ultricies purus mattis commodo. Integer porta elementum semper. Mauris non dapibus sapien. Duis volutpat, turpis nec ultricies venenatis, nisi leo luctus nibh, at consectetur ipsum justo vitae odio. Pellentesque ut enim ultricies, tristique ipsum vel, bibendum mi. Aenean tincidunt maximus orci, at ultricies tortor rutrum nec. Praesent sed nulla id massa consectetur sagittis. Aliquam iaculis lobortis vehicula. In hac habitasse platea dictumst. Maecenas pulvinar justo ac ante sagittis convallis. Donec interdum mi enim, eu euismod dolor cursus vel.
+                </p>
+
+                <p>
+                    Duis aliquet sapien in nibh mollis bibendum. Pellentesque feugiat quam a velit ullamcorper, elementum malesuada massa pulvinar. Nam euismod lorem vel posuere tempus. Nulla facilisi. Proin quis ligula ut felis commodo suscipit. Curabitur a tincidunt erat. Cras consectetur enim in magna suscipit, quis maximus mi interdum. 
+                </p>
+
+                <p>
+                    Praesent consectetur posuere elit, ut pretium lorem malesuada quis. Maecenas urna sem, consectetur sit amet fringilla et, gravida in dolor. Proin et urna ultricies, egestas libero vehicula, rutrum lectus. Aenean sed nisi nec sem suscipit aliquet. Nulla sed tortor sodales, tincidunt dui at, hendrerit ligula. Integer nec arcu euismod tortor blandit molestie eget nec orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus faucibus ornare feugiat. Duis dignissim sem sem, non laoreet lacus cursus id.
+                </p>
+
+                <footer>
+                    Written by Joe Bloggs on DD/MM/YYYY 
+                </footer>
+            </article>
+
+            <!-- comements -->
+            <section>
+                <h3>Comments</h3>
+                <article>
+                    <h4>johndoe</h4>
+                    <h5>Vestibulum eget tortor eu dui fermentum fringilla id in erat. Donec ligula quam, vestibulum in dui sed.</h5>
+                    <h6>posted on DD/MM/YYYY</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu erat ultricies purus mattis commodo. Integer porta elementum semper. Mauris non dapibus sapien. Duis volutpat, turpis nec ultricies venenatis, nisi leo luctus nibh, at consectetur ipsum justo vitae odio. Pellentesque ut enim ultricies, tristique ipsum vel, bibendum mi.</p>
+                </article>
+
+                <article>
+                    <h4>janedoe</h4>
+                    <h5>Ut in interdum risus. Duis fermentum scelerisque ex venenatis fringilla.</h5>
+                    <h6>posted on DD/MM/YYYY</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu erat ultricies purus mattis commodo. Integer porta elementum semper. Mauris non dapibus sapien. Duis volutpat, turpis nec ultricies venenatis, nisi leo luctus nibh, at consectetur ipsum justo vitae odio. Pellentesque ut enim ultricies, tristique ipsum vel, bibendum mi.</p>
+                </article>
+
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend>Add comment</legend>
+                            <label>Username: <input type="text" name="username" placeholder="your username" required autocomplete="username"></label>
+                            <label>Comment: <textarea name="comment" rows="5" cols="60" required></textarea></label>
+                            <input type="submit" value="Send">
+                        </fieldset>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <p>All rights reserved. Copyright &copy;</p>
+        </footer>
+    </body>
+</html>
