@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>First Form</title>
+        </head>
+        <body>
+            <form>
+                <fieldset>
+                    <legend>My Form</legend>
+                    <label>
+                        Name:
+                        <input type="text" required>
+                    </label>
+                    <label>
+                        Age:
+                        <input type="radio" name="age" value="<18">&lt;18
+                        <input type="radio" name="age" value="19-35">19-35
+                        <input type="radio" name="age" value="36-48">36-48
+                        <input type="radio" name="age" value="<49">&gt;49
+                    </label>
+                    <label>
+                        Profession:
+                        <input name="profession" list="professions">
+                        <datalist>
+                            <option>Student</option>
+                            <option>Computer Engineer</option>
+                            <option>Architect</option>
+                            <option>Professor</option>
+                            <option>Pilot</option>
+                            <option>Waiter</option>
+                        </datalist> 
+                    </label>
+                    <label>
+                        Country:
+                        <select name="country" required>
+                            <option value="portugal">Portugal</option>
+                            <option value="usa">USA</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="spain">Spain</option>
+                            <option value="estonia">Estonia</option>
+                            <option value="denmark">Denmark</option>
+                            <option value="france">France</option>
+                        </select>
+                    </label>
+                    <label>
+                        Interests:
+                        <input type="checkbox" name="interest" value="books">Books
+                        <input type="checkbox" name="interest" value="football">Football
+                        <input type="checkbox" name="interest" value="chess">Chess
+                        <input type="checkbox" name="interest" value="technology">Technology
+                        <input type="checkbox" name="interest" value="volley">Volley
+                    </label>
+                    <label>
+                        How did you find out about the site?
+                        <textarea rows="5" cols="60"></textarea>
+                    </label>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </body>
+</html>
