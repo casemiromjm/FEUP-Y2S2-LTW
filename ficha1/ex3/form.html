@@ -8,21 +8,26 @@
             <form>
                 <fieldset>
                     <legend>My Form</legend>
+
+                    <!-- name field -->
                     <label>
                         Name:
-                        <input type="text" required>
+                        <input name="name" type="text" required>
                     </label>
-                    <label>
-                        Age:
-                        <input type="radio" name="age" value="<18">&lt;18
-                        <input type="radio" name="age" value="19-35">19-35
-                        <input type="radio" name="age" value="36-48">36-48
-                        <input type="radio" name="age" value="<49">&gt;49
-                    </label>
+
+                    <!-- age field -->
+                    <!-- pq preciso ter o for igual ao id? -->
+                    <label for="age-range1">Age</label>
+                        <input id="age-range1" type="radio" name="age" value="<18">&lt;18
+                        <input id="age-range2" type="radio" name="age" value="19-35">19-35
+                        <input id="age-range3" type="radio" name="age" value="36-48">36-48
+                        <input id="age-range4" type="radio" name="age" value="<49">&gt;49
+                    
+                    <!-- profession field -->
                     <label>
                         Profession:
                         <input name="profession" list="professions">
-                        <datalist>
+                        <datalist id="professions">
                             <option>Student</option>
                             <option>Computer Engineer</option>
                             <option>Architect</option>
@@ -31,9 +36,11 @@
                             <option>Waiter</option>
                         </datalist> 
                     </label>
-                    <label>
-                        Country:
-                        <select name="country" required>
+
+                    <!-- country field -->
+                    <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected>Select your country</option>
                             <option value="portugal">Portugal</option>
                             <option value="usa">USA</option>
                             <option value="brazil">Brazil</option>
@@ -42,20 +49,23 @@
                             <option value="denmark">Denmark</option>
                             <option value="france">France</option>
                         </select>
-                    </label>
-                    <label>
-                        Interests:
-                        <input type="checkbox" name="interest" value="books">Books
+                    
+                    <!-- interest field -->
+                    <!-- msm coisa do age -->
+                    <label for="interest1"> Interests:</label>
+                        <input id="interest1" type="checkbox" name="interest" value="books">Books
                         <input type="checkbox" name="interest" value="football">Football
                         <input type="checkbox" name="interest" value="chess">Chess
                         <input type="checkbox" name="interest" value="technology">Technology
                         <input type="checkbox" name="interest" value="volley">Volley
-                    </label>
+
+                    <!-- extra text field -->
                     <label>
                         How did you find out about the site?
                         <textarea rows="5" cols="60"></textarea>
                     </label>
 
+                    <!-- submit button -->
                     <button type="submit">Submit</button>
                 </fieldset>
             </form>
