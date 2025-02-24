@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Imperial+Script&family=Ruda:wght@400..900&display=swap');
+
+.important {
+    color : #84a59d;
+}
+
+h1 {
+    font-family: 'Imperial Script', cursive;
+}
+
+.section-header {
+    font-family: 'Ruda', sans-serif;
+}
+
+body {
+    font-family: 'Crimson Pro', serif;
+}
+
+.bold {
+    font-weight: bold;
+}
