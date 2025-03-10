@@ -1,1 +1,107 @@
 /* styling the main components */
+
+/* 
+main colors:
+#2A2F33 - blackish grey
+#046DD5 - blue
+#F4655F - red for footers
+
+section colors:
+#E1493E - red / local
+#8ABA56 - green / world
+#5B4282 - purple / politics
+#FF8932 - oragne / sports
+#19B6E9 - light blue / science
+#E84C8B - pink / weather
+
+section links:
+on mouse hover, background color goes to #2A2F33 and the text goes white
+
+most paddings and margins are 1em.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:400,700');
+/* 
+Lora - serif
+Poppins - sans-serif
+*/
+
+/* set default font */
+* {
+    font-family: "Poppins";
+}
+
+/* set font for paragraphs */
+p {
+    font-family: 'Lora';
+    margin: 1em;
+}
+
+/* clear link styles */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: white;
+}
+
+/* hides the menu */
+#menu {
+    visibility: hidden;
+}
+
+/* gets the page header */
+body > header {
+    background-color: #046DD5;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    margin: 1em;
+}
+
+body > header > h2 {
+    font-weight: lighter;
+}
+
+/* common text section */
+#related {
+    background-color: #2A2F33;
+    color: white;
+    padding: 1em;
+}
+
+/* #news gets the news */
+/* gets the news title */
+#news h1 > a {
+    text-shadow: 2px 2px black;
+}
+
+#news > article > p:first-child::first-letter {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* gets the footer that is child of an article */
+article > footer {
+    background-color: #F4655F;
+    color: white;
+    padding: 1em;
+}
+
+/* gets the footer tags */
+.tags {
+    text-decoration: underline;
+    color: white;
+}
+
+/* gets the footer page, in other words, the footer that is the child of the body */
+body > footer {
+    background-color: #2A2F33;
+    color: white;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+
